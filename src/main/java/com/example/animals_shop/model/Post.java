@@ -35,4 +35,6 @@ public class Post {
     private String location;
     @ManyToOne
     private User user;
+    @ManyToOne
+    private Type type;
 }
