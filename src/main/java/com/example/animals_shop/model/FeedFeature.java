@@ -1,6 +1,5 @@
 package com.example.animals_shop.model;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

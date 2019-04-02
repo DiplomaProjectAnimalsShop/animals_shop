@@ -24,17 +24,17 @@ public class Post {
     @Column(name = "short_text")
     private String shortText;
     @Column
-    private String text;
+    private String content;
     @Column(name = "created_date")
     private Date createdDate;
     @Column
     private Double price;
-    @ManyToOne
-    private Category category;
     @Column
     private String location;
     @ManyToOne
-    private User user;
+    private Category category;
     @ManyToOne
-    private Type type;
+    private User user;
+    @Enumerated(EnumType.STRING)
+    private PostType postType;
 }

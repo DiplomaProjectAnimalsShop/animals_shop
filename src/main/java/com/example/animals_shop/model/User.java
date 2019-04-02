@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
 import javax.persistence.*;
 
 @Data
@@ -29,14 +28,14 @@ public class User {
     private String email;
     @Column
     private String password;
-    @Column(name = "user_type")
-    @Enumerated(EnumType.STRING)
-    private UserType userType = UserType.USER;
     @Column(name = "phone_number")
     private String phoneNumber;
     @Column
     private String avatar;
     @Column(name = "created_date")
     private String createdDate;
+    @Column(name = "user_type")
+    @Enumerated(EnumType.STRING)
+    private UserType userType = UserType.USER;
 
 }
