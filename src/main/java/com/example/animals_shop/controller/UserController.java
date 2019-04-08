@@ -50,7 +50,7 @@ public class UserController {
         return "registration";
     }
 
-    @GetMapping("/getImage")
+    @GetMapping("/user/getImage")
     public void getImageAsByteArray(HttpServletResponse response, @RequestParam("avatar") String picUrl) throws IOException {
         InputStream in = new FileInputStream("C:\\Users\\User\\IdeaProjects\\animals_shop\\images\\avatars\\" + picUrl);
         response.setContentType(MediaType.IMAGE_JPEG_VALUE);

@@ -23,8 +23,9 @@ public class Category {
     private String name;
     @Column
     private String description;
-    @ManyToOne
-    private Category parentCat;
     @Column(name = "cat_image")
     private String catImage;
+
+    @ManyToOne
+    private Category parentCat;
 }
